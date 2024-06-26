@@ -1,1 +1,126 @@
-/* your code here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+footer {
+  background-color: #111;
+  color: #fff;
+  padding: 40px 0;
+}
+
+footer .content {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+footer .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .top .logo-details .logo_name {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+footer .top .media-icons a {
+  color: #fff;
+  font-size: 18px;
+  margin: 0 10px;
+  display: inline-block;
+  transition: color 0.3s;
+}
+
+footer .top .media-icons a:hover {
+  color: #f1c40f;
+}
+
+footer .link-boxes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+footer .link-boxes .box {
+  width: calc(25% - 10px);
+}
+
+footer .link-boxes .box .link_name {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #f1c40f;
+}
+
+footer .link-boxes .box li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+footer .link-boxes .box li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+footer .link-boxes .box li a:hover {
+  color: #f1c40f;
+}
+
+footer .bottom-details {
+  background: #333;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+footer .bottom-details .bottom_text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+footer .bottom-details .bottom_text .copyright_text {
+  font-size: 14px;
+  color: #fff;
+}
+
+footer .bottom-details .bottom_text .policy_terms a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 10px;
+  transition: color 0.3s;
+}
+
+footer .bottom-details .bottom_text .policy_terms a:hover {
+  color: #f1c40f;
+}
+
+@media (max-width: 768px) {
+  footer .link-boxes {
+    flex-wrap: wrap;
+  }
+  footer .link-boxes .box {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+  footer .top {
+    flex-direction: column;
+  }
+  footer .top .media-icons {
+    margin-top: 10px;
+  }
+}
